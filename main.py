@@ -87,7 +87,7 @@ def get_eagerness(model, transcript):
             model=model["id"],
             messages=[{"role": "user", "content": prompt}],
             extra_headers={
-                "HTTP-Referer": "https://github.com/your-repo/ai-meeting",
+                "HTTP-Referer": "https://github.com/miki-mini/ai-meeting",
                 "X-Title": "AI 4-Person Meeting Script",
             }
         )
@@ -144,7 +144,7 @@ for round_num in range(1, max_rounds + 1):
                 ],
                 # OpenRouterの規約や推奨設定としてReferer等を入れる
                 extra_headers={
-                    "HTTP-Referer": "https://github.com/your-repo/ai-meeting",
+                    "HTTP-Referer": "https://github.com/miki-mini/ai-meeting",
                     "X-Title": "AI 4-Person Meeting Script",
                 }
             )
