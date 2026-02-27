@@ -1,0 +1,14 @@
+# Secrets
+.env
+
+# Virtual Environment
+.venv/
+env/
+venv/
+
+# Python cache
+__pycache__/
+*.pyc
+
+# Local logs
+meeting_log_*.md
