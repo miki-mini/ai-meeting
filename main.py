@@ -21,14 +21,21 @@ client = OpenAI(
     api_key=OPENROUTER_API_KEY,
 )
 
-# 3. 参加するAIモデルの定義 (OpenRouterのモデルIDを指定)モデルの金額に注意！
+# 3. 参加するAIモデルの定義 (OpenRouterのモデルIDを指定)トップモデル
+# models = {
+#     "Gemini": {"name": "Gemini", "id": "google/gemini-3.1-pro-preview"},
+#     "Claude": {"name": "Claude", "id": "anthropic/claude-opus-4.6"},
+#     "ChatGPT": {"name": "ChatGPT", "id": "openai/gpt-5.2"},
+#     "Grok": {"name": "Grok", "id": "x-ai/grok-4"},
+#     "Gemma": {"name": "Gemma", "id": "google/gemma-3-27b-it"},
+#     "Mistral": {"name": "Mistral", "id": "mistralai/mistral-large-2512"},
+
+# 安いモデル
 models = {
-    "Gemini": {"name": "Gemini", "id": "google/gemini-3.1-pro-preview"},
-    "Claude": {"name": "Claude", "id": "anthropic/claude-opus-4.6"},
-    "ChatGPT": {"name": "ChatGPT", "id": "openai/gpt-5.2"},
-    "Grok": {"name": "Grok", "id": "x-ai/grok-4"},
-    "Gemma": {"name": "Gemma", "id": "google/gemma-3-27b-it"},
-    "Mistral": {"name": "Mistral", "id": "mistralai/mistral-large-2512"},
+    "Gemini": {"name": "Gemini", "id": "google/gemini-2.5-flash"},
+    "Claude": {"name": "Claude", "id": "anthropic/claude-3.5-sonnet"},
+    "ChatGPT": {"name": "ChatGPT", "id": "openai/gpt-4o-mini"},
+    "Grok": {"name": "Grok", "id": "x-ai/grok-4-mini"},
 }
 participants = [m["name"] for m in models.values()]
 
