@@ -58,5 +58,8 @@ python main.py
 ## カスタマイズ
 `main.py` の `models` 辞書を編集することで、参加させるAIモデルを変更できます。OpenRouterで提供されているお好きなモデルIDを指定してください。
 
+## リンク
+[ZENN記事](https://zenn.dev/miki_mini/articles/7e9dcd29aa7dc7)
+
 ## ライセンス
 MIT License (またはご自由にお使いください)
